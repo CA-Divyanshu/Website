@@ -170,12 +170,49 @@ footer {
 	
 }
 #youtube{
-	width: 30%; height: 60px;
-	font-size: 25px;
+	padding: 10px 20px;
+    background-color: silver;
+    color: #000000;
 	font-family: 'Sacramento', cursive;
-	margin: 0 auto;
-	background-color: #9bfc99;
-	color: #000000;
-    border-style: solid;
-    border-color: black;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust font sizes, margins, padding, etc. for smaller screens */
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 10px;
+  }
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+  .home-content,
+  .courses-content,
+  .paid-course-content,
+  .contact-content {
+    padding: 10px;
+  }
+}
+
+/* Example Fluid Layout */
+.container {
+  width: 90%; /* 90% width of the viewport */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Example Flexbox Layout */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section .content {
+  flex: 1 1 45%; /* 45% width for each content block */
 }
